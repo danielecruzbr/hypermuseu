@@ -24,18 +24,18 @@ if (campoPesquisa == "") {
 //* Exibe no console do navegador o objeto section (opcional).
 console.log(section,campoPesquisa);
 
-campoPesquisa = campoPesquisa.toLowerCase()
+//campoPesquisa = campoPesquisa.toLowerCase()
 
 // Inicializa uma string vazia para armazenar os resultados.
 let resultados = "";
-let titulo = "";
+//let titulo = "";
 
 //  Essa variável é inicializada com 0 e incrementada a cada resultado encontrado
 let resultadosEncontrados = 0;
 
 // Este é um loop for...of que itera sobre um conjunto de dados (representado pela variável dados). A cada iteração, a variável dado receberá um elemento desse conjunto.
 for (let dado of dados) {
-    titulo = dado.titulo.toLowerCase()
+    //titulo = dado.titulo.toLowerCase()
     //condicional, se o título includes campoPesquisa
     if(dado.titulo.includes(campoPesquisa)){
         // Cria um novo elemento html para cada resultado.
@@ -52,6 +52,7 @@ for (let dado of dados) {
     resultadosEncontrados++; 
     }  
 }
+
 // Verifica se algum resultado foi encontrado
 if (resultadosEncontrados === 0) {
     section.innerHTML = `<p>Nenhum resultado encontrado para a pesquisa "${campoPesquisa}".</p>`;
