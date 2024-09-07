@@ -7,7 +7,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; /* Define a fonte padrão */
-    background-image: url('imagens/Tarsila do Amaral-Antropofagia-1929.jpg'); /* Imagem de fundo */
+    background-image: url('imagens/Joao-Batista-da-Costa-Reminiscencia-do-Morro-do-Castelo-1923.jpg'); /* Imagem de fundo */
     /* Outras propriedades de estilo para ajustar a imagem */
     background-size: cover; /* Ajuste o tamanho da imagem para cobrir todo o elemento */
     background-position: center; /* Centralize a imagem */
@@ -80,6 +80,7 @@ h2 {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
+    z-index: 1; /* Define o nível de empilhamento */
     width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
@@ -123,6 +124,20 @@ h2 {
     font-size: 1rem;
     line-height: 1.5em
 }
+
+.creditos {
+    z-index: 0; /* Define o nível de empilhamento */
+    font-size: 0.8rem; /* Tamanho da fonte */
+    font-weight: 500;
+    text-align: left;
+    color: #31352E; /* Cor do texto */
+    border-radius: 0.6rem; /* Borda arredondada */
+    position: absolute;
+    bottom: 3rem; /* Ajusta a distância da borda inferior */
+    right: 20px; /* Ajusta a distância da borda direita */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
+    padding: 10px;
+  }
 
 /* Estiliza o rodapé da página */
 footer {
