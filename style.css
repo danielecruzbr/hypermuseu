@@ -157,7 +157,14 @@ h2 {
     right: 20px; /* Ajusta a distância da borda direita */
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
     padding: 10px;
+    text-align: right;
   }
+
+  .creditos a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-weight: 700;
+    color: #3D5B59; /* Cor do texto dos links */
+}
 
 /* Estiliza o rodapé da página */
 footer {
